@@ -1,0 +1,51 @@
+1. 
+ls
+_______________
+
+2.
+ls -1A 
+_______________
+
+3. 
+ls -l
+_______________
+
+4. 
+touch my_file.txt
+_______________
+
+5. 
+rm useless.json
+_______________
+
+6. 
+mkdir new_files
+_______________
+
+7. 
+mv *.new new_files/
+_______________
+
+8. 
+Wildcards do not match hidden files.
+Therefore we have to remove the file '.hidden.old' explicitly.
+
+rm *.old
+rm .hidden.old
+_______________
+
+9. 
+mv weird_name.txt good_name.txt
+_______________
+
+10. 
+Removing all contents of the trash directory like this 'rm -r trash/*' would not be sufficient, because it contains hidden files, which are not matched by the wildcard. Therefore, you can choose one of the given options below:
+
+rm -r trash/
+mkdir trash/
+
+or
+
+rm -r trash/*
+rm trash/.hidden
+_______________

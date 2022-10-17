@@ -1,0 +1,11 @@
+1. execute the command '$(sleep 180 ; echo "finished at $(date)" > finished.txt)' as a background process
+2. Save the current output of the command 'jobs' to a file called 'running.txt'
+3. Pull the process started earlier into the foreground
+4. Stop the process (Do not cancel it but stop it temporarily!
+5. Save the current output of the command 'jobs' to a file called 'stopped.txt'
+6. Resume the process in the background
+7. Wait until the background process has finished and try to understand what happened.
+8. Use the command './check.sh' in this directory to verify your results for tasks 1-6
+9. Discuss your results of task 7 with the person next to you or verify your hypothesis using the file 'solutions.txt'
+
+NOTE: Unfortunately the Ctrl+Z does not work correctly with Docker on Windows. Therefore, if you are running Windows, you cannot fully complete this exercise.

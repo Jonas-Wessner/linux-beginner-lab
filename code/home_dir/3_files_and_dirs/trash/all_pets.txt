@@ -1,0 +1,12 @@
+Usual Pets:
+    cats
+    dogs
+    birds
+    rabbits
+    guinea pigs
+    fish.
+
+More unusual pets:
+    reptiles
+    ferrets
+    stick insects.

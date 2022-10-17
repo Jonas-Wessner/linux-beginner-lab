@@ -1,0 +1,35 @@
+1.  
+After completing exercise 3, these files should be located at '../3_files_and_dirs/'.
+Therefore the commands to copy the two files to this directory are:
+cp ../3_files_and_dirs/best_recipe.txt.new .
+and
+cp ../3_files_and_dirs/morning_routine.txt.new .
+_______________________________________________
+
+2. 
+Possible solution:
+cat best_recipe.txt.new >> morning_routine.txt.new
+_______________________________________________
+
+3. 
+touch search_results.txt
+_______________________________________________
+
+4.
+Possible solution:
+cat titanic_train.csv | egrep ",Q" > search_results.txt
+or
+egrep ",Q" < titanic_train.csv > search_results.txt
+or
+egrep ",Q" titanic_train.csv > search_results.txt
+_______________________________________________
+
+5.
+touch count.txt
+_______________________________________________
+
+6.
+Possible solution:
+egrep ",S" titanic_train.csv | wc -l > count.txt
+_______________________________________________
+

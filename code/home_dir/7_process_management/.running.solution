@@ -1,0 +1,1 @@
+[1]+  Running                 $(sleep 180 ; echo "finished at $(date)" > finished.txt) &

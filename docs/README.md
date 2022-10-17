@@ -1,0 +1,1 @@
+This directory contains documentation about Linux and Bash as well as about this repository. You can use the `script.pdf` in the directory `script/` to make your first steps with Linux and Bash and use the docker image as explained in the last chapter there to practice.

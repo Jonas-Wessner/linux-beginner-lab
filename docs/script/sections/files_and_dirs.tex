@@ -1,0 +1,42 @@
+\section{Files and directories}
+\label{sec:file_and_dirs}
+
+In this section, we take a closer look at files and directories and how to modify them.
+
+To get a deeper understanding of files and directories in Linux, one can use the \lstinline{ls -l} command (\textbf{l}i\textbf{s}t \textbf{l}ong), which prints all contents of the current directory including additional information. An example of the output of this command is shown below:
+
+\begin{lstlisting}
+-rw-rw-r-- 1 myuser myuser 13980 Sep 19 18:18 big_data.zip
+drwxr-xr-x 2 myuser myuser  4096 Sep 28 10:34 docs
+-rw-r--r-- 1 myuser myuser     0 Sep 28 10:34 notes.txt
+-rwxrwxr-x 1 myuser myuser   853 Sep 19 19:00 program.sh
+\end{lstlisting}
+
+Each entry begins with information about the permissions on the left side. For each entry there are 10 characters, which all have a special meaning. For directory entries the first character is a \lstinline{d}, which tells us that this entry is a directory, for file entries this is a hyphen. If all permissions are given for a file or directory, the following 9 characters will be three blocks of \lstinline{rwx}, which results in \lstinline{rwxrwxrwx}. These have the following meaning:
+
+\begin{itemize}
+    \item \lstinline{r} is the permission to read the file, or for directories to look at its contents.
+    \item \lstinline{w} is the permission to write, which means for files to modify them and for directories to create, delete or rename entries inside of the directory.
+    \item \lstinline{x} is the permission to execute. For files this means to run them as a program. For directories this means to navigate into the directory i.e. to open it.
+\end{itemize}
+
+If any permission is not set, instead of the respective character, a hyphen (-) will appear. The permissions exist three times, because they are specific to the role the user is assigned to. Each file or directory belongs to a user and a group. All files shown in the example belong to the user called \lstinline{myuser} and a group with the same name. Initially a file or directory belongs to the user who created it and to the group associated with the user. The first bundle of \lstinline{rwx} then represents the permissions for the owning user of the entry, the second one represents the permissions for owning group and the third one the permissions for everyone else. For example, the file \lstinline{big_data.zip} can be modified and read by the user \lstinline{myuser} or anyone in the group called \lstinline{myuser}. All other users can only read the file. Nobody can execute the file as a program. After the owning users and groups, the next information emitted by \lstinline{ls -l} is the size of the file or directory in bytes. On the right side of that one can see the last modification date of the entry.
+
+File and directory names in Linux and any other operation system are a way of uniquely identifying files and directories inside of their parent directory. Therefore, two files or directories with the same name in the same directory are not permitted. An interesting fact is, that the file extension has no effect on the contents of the file at all. It merely is a conventional hint on the format which the file is written in. E.g. plain text files often have the extension \lstinline{.txt} and pdf files the extension \lstinline{.pdf}. If the file extension does not match the actual format of the file, programs working with the file might handle the files the wrong way. E.g. a PDF-viewer might not want to open a file with the extension \lstinline{.zip} even if the actual content of the file is in pdf format. This allows programs to make an educated guess about the format of the file without having to read and analyze its contents.
+
+Files whose names start with a dot are hidden files, which are not shown to the user by default. To show hidden files with the \lstinline{ls} command, the option \lstinline{-A} (\textbf{a}ll) can be used.
+
+The content of files can be looked at using the \lstinline{cat} command, which reads the file and prints everything read to the console.
+
+To create a new empty file, the command \lstinline{touch <filename>} can be used. To create a new directory, the command \lstinline{mkdir <dirname>} (\textbf{m}a\textbf{k}e\textbf{dir}ectory) can be used.
+
+To remove a file, the command \lstinline{rm <filename>} (\textbf{r}e\textbf{m}ove) can be used. In order to remove a directory the option \lstinline{-r} (\textbf{r}ecursive) must be given like so: \lstinline{rm -r <dirname>}.
+
+To copy a file from one location to another, the command \lstinline{cp <source> <dest>} (\textbf{c}o\textbf{p}y) can be used, where \lstinline{<source>} and \lstinline{<dest>} are both file paths. If the destination file path is an existing directory, the file will be copied into that directory and maintain its name. If the destination file path ends with a non-existing file name, the file is copied and the copy will receive this new name. To copy whole directories, once again the option \lstinline{-r} must be specified: \lstinline{cp -r <dir> <dest>}.
+
+In order to move a file from one location to another, the command \lstinline{mv <source> <dest>} (\textbf{m}o\textbf{v}e) can be used. Similar to the \lstinline{cp} command, if the destination is an existing directory, the source will be moved into that directory and maintain its name. If the destination ends with a non-existing name, the source will be moved to that location and receive the given name. Therefore, the move command can also be used for renaming files like so: \lstinline{mv <old_name> <new_name>}.
+
+In order to address multiple files or directories whose names share a common pattern, wildcards can be helpful. The wildcard symbol is a star (*) and matches any combination of characters. E.g. \lstinline{rm -r *} would remove all files and directories in the current directory and \lstinline{rm -r useless_*} would remove all files and directories with the prefix \lstinline{useless_}. It is important to mention that wildcards, for security reasons, do not match hidden files.
+
+In order to change the earlier mentioned permissions of files, the command \lstinline{chmod <opt> <filename>} can be used. It expects an option \lstinline{<opt>} which specifies how to change the file permissions. The option \lstinline{+x} adds execute rights for everyone and the option \lstinline{-x} removes them. The option \lstinline{u+x} adds execute permissions only for the owning user. Other combinations \lstinline{<role>+/-<right>} work in the same manner.
+

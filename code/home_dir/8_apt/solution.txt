@@ -1,0 +1,22 @@
+1.
+We need to use the sudo (SUper User Do) command to execute the actual apt command, because installing things must be done with administrator rights. Enter the passwort 'secret' once asked. Also, it is best practice to update the apt package managers internal package lists before using it.
+
+optional but recommended: 
+
+sudo apt update
+sudo apt upgrade
+
+mandatory:
+
+sudo apt install unzip
+_______________________________________________
+
+2.
+unzip big_data.zip
+_______________________________________________
+
+3. 
+sudo apt remove unzip
+
+Confirm by typing 'y'
+_______________________________________________

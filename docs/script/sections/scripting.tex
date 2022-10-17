@@ -1,0 +1,24 @@
+\section{Automation using scripts}
+\label{sec:scripting}
+
+One of the major advantages of using the terminal is the power of scripting. A script is basically a computer program written in many commands, which are executed just in time. In the easiest case, a script is just a few commands written to a file and executed one after another. However, \lstinline{bash} actually provides a whole programming language enabling users to create scripts that can achieve pretty much everything. Scripts are a nice way of automating tedious and repetitive tasks.
+
+The following shows a script, which installs two programs and afterwards emits a message saying it is finished:
+
+\begin{lstlisting}
+#!/bin/bash
+
+sudo apt update
+sudo apt upgrade
+sudo apt install -y unzip
+sudo apt install -y firefox
+echo "Script finished"
+\end{lstlisting}
+
+Each \lstinline{bash}-script should start with the line \lstinline{#!/bin/bash}, which is also called shebang. This line tells the computer which program shall be used to interpret the scripts contents. In the case of \lstinline{bash}-scripts that is the program \lstinline{bash}, which is located in the directory \lstinline{/bin} of the system.
+
+In order to execute a script, it must be executable by the current user (see section \ref{sec:file_and_dirs}). Then the user can start a script by entering the path to the script in the terminal. Note that if the script is located in the current directory, its path must be specified with an explicit dot at the beginning like \lstinline{./<script>}, because otherwise the shell only searches for programs installed in certain system directories.
+
+When starting a script, the calling shell will then look at the shebang and start a new instance of the given interpreter (in this case \lstinline{bash}) and execute the contents of the script in it.
+
+Advanced users can use \lstinline{bash}-scripts to write programs like in any other programming language. For this use case \lstinline{bash} also supports if-statements, loops and other flow control statements, which one might already be familiar with.

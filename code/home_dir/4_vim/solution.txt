@@ -1,0 +1,32 @@
+1.
+touch lets_go_vim.txt
+_______________________________________________
+
+2.
+- Open the vim editor with:
+    vim lets_go_vim
+- Press 'i' to enter the insert-mode 
+- Write the text 'Hello Vim!'
+- Press Esc twice
+- type ':wq' to for quit and write, which means saving the changes and exiting the editor
+_______________________________________________
+
+3. 
+cat lets_go_vim.txt
+_______________________________________________
+
+4.
+- Open the editor:
+    vim shopping_list.txt
+- Press 'i' to enter the insert-mode
+- Edit the file as you normally would. Replace all numbers with dots (e.g. 1., 2. and so on) with hyphens (-)
+- type ':wq' to for quit and write, which means saving the changes and exiting the editor
+_______________________________________________
+
+5.
+- Open the editor:
+    vim shopping_list.txt
+- Use the arrow keys to navigate to the line which you want to delete
+- Press two times 'd' to delete this line
+- type ':wq' to for quit and write, which means saving the changes and exiting the editor
+_______________________________________________

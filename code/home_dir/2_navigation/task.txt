@@ -1,0 +1,11 @@
+1. Show all contents of this directory
+2. Find the file called 'passwort.secret' and look at its content. It is located somewhere in this directory and its subdirectories.
+3. Navigate to the root of the directory tree.
+4. Show all home directories on the machine
+5. Show the contents of the directory /bin. What do you see?
+6. Change to your home directory using the '~' syntax
+7. Navigate to locations of your own choice using absolute and relative paths.
+8. Use the command history (arrow up and down) to execute some of the commands, which you have used previously once again.
+9. Print your current location in the directory tree
+
+NOTE: Try to use Tab-completion for all of the exercises.

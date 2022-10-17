@@ -1,0 +1,7 @@
+1. Use the echo command, a subshell and the date command to print the text 'It is now <date>', where date is the current date and time. Redirect the output to a file called 'date.txt'
+2. Use a subshell and the 'date +%y_%m_%d_%H' command to automatically create a file with the name '<year>_<month>_<day>_<hour>.log', where the in brackets encapsulated variables equal the attributes of the current point in time.
+3. Check whether the entries with the ID 121 are equal for the file 'titanic_train_1.csv' and the file 'titanic_train_2.csv' using the egrep command and a subshell. Before you start, use the cat command to get an impression of the data in the files in order to decide how to search for the entry with this ID.
+4. Repeat the third task for the id 122
+5. Use the command './check.sh' in this directory to verify your results for task 1 and 2
+6. Compare your results for exercise 3 and 4 with those of the person next to you or check the file 'solution.txt'
+

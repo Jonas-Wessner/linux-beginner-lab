@@ -1,0 +1,19 @@
+This directory is an exact copy of the directory '3_files_and_dirs'.
+This time it is your task to create a script, which completes the exercise for you.
+As a reminder, the tasks of exercise 3, which should be automated in this exercise, are:
+ 
+- Show all contents of this directory
+- Show all contents of this directory in separate lines including hidden files
+- Show all contents of this directory with their permissions
+- Create a new file called `my_file.txt`
+- Delete the file called `useless.json`
+- Create a directory with the name `new_files`
+- Move all files with the suffix `.new` to the directory `new_files`
+- Remove all files with the suffix `.old?`
+- Rename the file `weird_name.txt` to `good_name.txt`
+- Clear all contents of the directory `trash`
+
+
+Bonus: If that is fun, implement another script for one of the other exercises.
+
+NOTE: If you need to reset the directory to test your script multiple times, then use the './reset 9_scripting' command in your home directory. If you do that you might want to backup your script somewhere outside of this directory, so it will not get deleted during the reset process.

@@ -1,0 +1,26 @@
+1.
+echo "It is now $(date)" > date.txt
+_______________________________________________
+
+2.
+Possible solution:
+touch "$(date +%y_%m_%d_%H.log)"
+or
+touch "$(date +%y_%m_%d_%H).log"
+_______________________________________________
+
+3. 
+Execute the command
+grep "$(grep "121," titanic_train_1.csv)" titanic_train_2.csv
+
+In the inner shell we search for the entry with the ID 121 in the file 'titanic_train_1.csv'.
+Then we search for that entry in the other file.
+As we get no result, this means that the entries are not equal.
+_______________________________________________
+
+4.
+Execute the command
+grep "$(grep "122," titanic_train_1.csv)" titanic_train_2.csv
+
+This time we get a result, which means, that the entries are equal
+

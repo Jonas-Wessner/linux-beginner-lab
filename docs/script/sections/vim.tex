@@ -1,0 +1,13 @@
+\section{Editing files using Vim}
+
+Vim is a command line text editor installed on most versions of Linux.
+
+In order to open a file using Vim, the command \lstinline{vim <filename>} can be used. After opening, Vim is in the command mode, which means, it accepts commands to change to a more specific mode. If one has accidentally entered some other mode, one can press the ESC key, to come back to the command mode.
+
+The second most important mode is the insert mode. To change into the insert mode, one can press the \lstinline{i} key. In the insert mode one can modify the file just like in any other text editor. To leave the insert mode and come back to the command mode, one must press the ESC key.
+
+In order to leave Vim, one can type \lstinline{:q} (\textbf{q}uit). If there are unsaved changes made to the file, one can either use \lstinline{:q!} to exit the editor and discard the changes or \lstinline{:wq} (\textbf{w}rite and \textbf{q}uit) to save the changes and then leave the program.
+
+If one would like to delete a whole line, he can press the \lstinline{d} key twice while being in the command mode.
+
+Also, many other features are available in Vim. In fact, it can also be used as an integrated development environment (IDE) to write code if set up properly. However, in this document we leave it for just the basics shown above.

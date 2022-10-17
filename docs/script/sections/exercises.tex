@@ -1,0 +1,26 @@
+\section{Exercises}
+
+There is a docker image with interesting exercises for the sections \ref{sec:navigation} to \ref{sec:scripting}. Docker is essentially a way to run lightweight virtual machines. This makes it possible to practice \lstinline{bash} and Linux independent from your computers host operating system.
+
+First you need to install Docker from their official website \url{https://docs.docker.com/engine/install/}
+
+Afterwards you can start right away by entering the following command in your operating systems terminal:
+
+\begin{lstlisting}
+docker run --name ubuntu-playground-c -it jonaswessner/ubuntu-playground:latest
+\end{lstlisting}
+
+This will first pull the prepared image from the internet and then start a shell session inside of a container running the image. If you execute \lstinline{ls} you will find one directory for each exercise. You should also check out the \lstinline{README} file located there.
+
+To exit the shell, you can execute the command \lstinline{exit}. If you want to resume the container afterwards and continue working on the exercises, you can use the following command:
+
+\begin{lstlisting}
+docker start -i ubuntu-playground-c
+\end{lstlisting}
+
+
+If you want to completely reset the container, you can use the following command. However in the home directory of the image, there is also a script, which can reset single directories for you, in case you just want to reset one exercise.
+
+\begin{lstlisting}
+docker container rm ubuntu-playground-c
+\end{lstlisting}

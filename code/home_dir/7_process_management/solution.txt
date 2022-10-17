@@ -1,0 +1,35 @@
+1.
+$(sleep 180 ; echo "finished at $(date)" > finished.txt) &
+_______________________________________________
+
+2.
+jobs > running.txt
+_______________________________________________
+
+3. 
+The process normally has the ID 1:
+fg 1
+_______________________________________________
+
+4. 
+Press Ctrl+Z
+_______________________________________________
+
+5. 
+jobs > stopped.txt
+_______________________________________________
+
+6.
+The process normally has the ID 1:
+bg 1
+_______________________________________________
+
+7.
+Wait for about 180 seconds and check the status using the 'jobs' command
+_______________________________________________
+
+9. 
+The command runs a sleep command, which does nothing for 180 seconds.
+The ';' character tells the command to continue with another command once the first command has finished.
+Therefore, after 180 seconds, the current date is written to the file 'finished.txt'.
+_______________________________________________

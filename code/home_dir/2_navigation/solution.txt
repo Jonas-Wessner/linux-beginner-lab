@@ -1,0 +1,54 @@
+1. 
+ls -A
+_______________
+
+2. 
+cat /home/myuser/2_navigation/docs/university/TGI/graphs/passwort.secret
+
+or
+
+cd ~/2_navigation/docs/university/TGI/graphs
+cat passwort.secret
+_______________
+
+3. 
+cd /
+_______________
+
+4. 
+ls /home
+
+There is only one, because there is only one user:
+_______________
+
+5. 
+ls /bin
+
+All entries here are executable programs. For example the programs 'ls' and 'pwd', which you have already used, can be found here.
+_______________
+
+6. 
+cd ~
+_______________
+
+7. 
+Example:
+
+cd ~/2_navigation/docs/work/
+cd /home/myuser/2_navigation/docs/work/
+
+Both commands are equal
+
+Assuming you are currently in '/home/myuser/2_navigation', you could also use:
+
+cd docs/work
+
+or 
+
+cd ./docs/work
+_______________
+
+
+9. 
+pwd
+_______________

@@ -1,0 +1,14 @@
+ 1. Show all contents of this directory
+ 2. Show all contents of this directory in separate lines including hidden files
+ 3. Show all contents of this directory with their permissions
+ 4. Create a new file called `my_file.txt`
+ 5. Delete the file called `useless.json`
+ 6. Create a directory with the name `new_files`
+ 7. Move all files with the suffix `.new` to the directory `new_files`
+ 8. Remove all files with the suffix `.old?`
+ 9. Rename the file `weird_name.txt` to `good_name.txt`
+10. Clear all contents of the directory `trash`
+11. Use the command './check.sh' in this directory to verify your results
+
+NOTE 1: Wildcards (*) can be helpful
+NOTE 2: Watch out for hidden files

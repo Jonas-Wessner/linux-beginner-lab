@@ -1,0 +1,87 @@
+\documentclass{article}
+\usepackage[backend=bibtex]{biblatex}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{caption}
+\usepackage[skip=0.5ex]{subcaption}
+\usepackage[left=3cm,right=3cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[pdfborder={0 0 0}]{hyperref} % Kein Rahmen um die 
+
+% Print tilde correctly
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{listings}
+\definecolor{commentgreen}{rgb}{0.15,0.42,0.2}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{stringred}{rgb}{0.6,0.12,0.12}
+\definecolor{functionblue}{rgb}{0,0,1}
+\definecolor{backcolor}{rgb}{0.95,0.95,0.92}
+\definecolor{linkcolor}{rgb}{0, 0.05, 0.3}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Linux Terminal},
+    pdfpagemode=FullScreen,
+}
+
+\usepackage{parskip} % do not indent first lines
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{textcomp}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{listings}
+
+\lstset{language=Java,
+  commentstyle=\color{commentgreen},
+  keywordstyle=\color{functionblue},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{stringred},
+  basicstyle=\ttfamily\fontsize{14}{14},
+  breakatwhitespace=false,         
+  breaklines=true,                 
+  captionpos=b,                    
+  keepspaces=true,                 
+  numbers=left,                    
+  numbersep=5pt,                  
+  showspaces=false,                
+  showstringspaces=false,
+  showtabs=false,                  
+  tabsize=2
+}
+
+\newcommand{\quotes}[1]{''#1''}
+
+\graphicspath{ {./images/} }
+
+\begin{document}
+\title{Linux Terminal \textendash\\
+  Tutorial for beginners}
+\author{Jonas Weßner}
+\maketitle
+\tableofcontents
+\newpage				% Neue Seite nach TOC
+
+\input{sections/intro.tex}\newpage
+\input{sections/navigation.tex}\newpage
+\input{sections/files_and_dirs.tex}\newpage
+\input{sections/vim.tex}\newpage
+\input{sections/piping_and_redirection.tex}\newpage
+\input{sections/subshells.tex}\newpage
+\input{sections/process_management.tex}\newpage
+\input{sections/apt.tex}\newpage
+\input{sections/scripting.tex}\newpage
+\input{sections/exercises.tex}
+
+\end{document}

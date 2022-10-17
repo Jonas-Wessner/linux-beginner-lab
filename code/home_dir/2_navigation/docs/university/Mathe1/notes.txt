@@ -1,0 +1,1 @@
+sum formula: sum_0(n) = (n * (n + 1)) / 2

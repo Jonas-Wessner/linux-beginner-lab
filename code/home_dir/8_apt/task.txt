@@ -1,0 +1,7 @@
+1. Install the program 'unzip' using apt
+2. Unzip the zip-archive 'big_data.zip' using the program unzip
+3. Uninstall the program 'unzip' using apt
+4. Use the command './check.sh' in this directory to verify your results
+
+NOTE 1: Installing and uninstalling requires administrator rights (sudo)
+NOTE 2: The password for the super user (sudo) ist 'secret'

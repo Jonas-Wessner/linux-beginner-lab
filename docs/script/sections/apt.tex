@@ -1,0 +1,23 @@
+\section{Installing new programs with apt}
+
+Many programs are preinstalled on Linux. Examples are \lstinline{ls}, \lstinline{pwd}, \lstinline{egrep}, \lstinline{date}, \lstinline{find} and many more. The exact set of preinstalled programs varies depending on the Linux distribution. However, it is for sure that at some point the user wants to install new programs. In Linux this is often done by using package managers. The default package managers for Ubuntu (the most common Linux distribution) are \lstinline{apt} and \lstinline{apt get}, which only have minor differences.
+
+The \lstinline{apt} package manager maintains a list of current available packages (i.e. programs) and a list of currently installed packages.
+
+\begin{itemize}
+    \item The command \lstinline{apt update} updates this list of available packages to the latest versions of the packages found online.
+    \item \lstinline{apt upgrade} updates all already installed packages to their newest available version.
+    \item \lstinline{apt install <package>} searches for a package with a given name in the list of available packages and tries to install it.
+    \item \lstinline{apt remove <package>} uninstalls a package with a given name.
+\end{itemize}
+
+It is always recommended to run \lstinline{apt update} before running \lstinline{apt upgrade} or \lstinline{apt install} in order to upgrade or install the newest version of a package available instead of a deprecated one.
+
+Installing, removing and updating programs is a task that requires administrator privileges. Therefore, all apt commands must be executed as a super user e.g. \lstinline{sudo apt update}. 
+
+A big advantage of package managers over installation wizards is the possibility of automation. Users might want to install many programs in a very specific way e.g. for their work. Instead of the company requiring each employee to follow long and tedious installation guides and clicking through the wizards, they can provide a script, which installs all programs automatically.
+
+Not all programs are always available through package managers. Less popular software must often be downloaded from a website and then installed by running a script. 
+
+
+  

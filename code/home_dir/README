@@ -1,0 +1,13 @@
+This directory contains 8 exercises, which you can use to practice Bash and Linux.
+
+In case you want to reset a directory to its initial state (e.g. because you have accidentally deleted something or you want to do the exercise again) you can use the command
+
+./reset <dir_name>
+
+in this directory.
+
+To reset all exercises, you can use the command:
+
+./reset all
+
+Have fun!
