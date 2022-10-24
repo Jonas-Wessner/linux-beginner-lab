@@ -18,13 +18,13 @@ _______________
 4. 
 ls /home
 
-There is only one, because there is only one user:
+There is only one because there is only one user:
 _______________
 
 5. 
 ls /bin
 
-All entries here are executable programs. For example the programs 'ls' and 'pwd', which you have already used, can be found here.
+All entries here are executable programs. For example, the programs 'ls' and 'pwd', which you have already used, can be found here.
 _______________
 
 6. 

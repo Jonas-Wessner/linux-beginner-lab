@@ -1,7 +1,7 @@
 1. Create a file called 'lets_go_vim.txt'
 2. Use vim to edit the file 'lets_go_vim.txt' and change its contents to 'Hello Vim!'
 3. Look at the modified file using the cat command
-4. Use Vim to replace all numbers with dots in the file 'shopping_list.txt' by hyphens (-). E.g. the fist line should look like this '- Water'.
+4. Use Vim to replace all numbers with dots in the file 'shopping_list.txt' by hyphens (-). E.g. the first line should look like this '- Water'.
 5. Delete the entry with cream in the file 'shopping_list.txt'
 6. Use the command './check.sh' in this directory to verify your results
 

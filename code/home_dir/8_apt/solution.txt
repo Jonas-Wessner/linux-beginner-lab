@@ -1,5 +1,5 @@
 1.
-We need to use the sudo (SUper User Do) command to execute the actual apt command, because installing things must be done with administrator rights. Enter the passwort 'secret' once asked. Also, it is best practice to update the apt package managers internal package lists before using it.
+We need to use the sudo (SUper User Do) command to execute the actual apt command because installing things must be done with administrator rights. Enter the password 'secret' once asked. Also, it is best practice to update the apt package managers' internal package list before using it.
 
 optional but recommended: 
 
