@@ -17,3 +17,4 @@ As a reminder, the tasks of exercise 3, which should be automated in this exerci
 Bonus: If that is fun, implement another script for one of the other exercises.
 
 NOTE: If you need to reset the directory to test your script multiple times, then use the './reset 9_scripting' command in your home directory. If you do that you might want to backup your script somewhere outside of this directory, so it will not get deleted during the reset process.
+
