@@ -29,3 +29,5 @@ docker start -i ubuntu-playground-c
 ```console
 docker container rm ubuntu-playground-c
 ```
+
+*Note:* For exercise 8, you will have to enter the password for the user `myuser`. The password is set to `secret`.

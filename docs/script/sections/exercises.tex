@@ -2,9 +2,9 @@
 
 There is a docker image with interesting exercises for the sections \ref{sec:navigation} to \ref{sec:scripting}. Docker is essentially a way to run lightweight virtual machines. This makes it possible to practice \lstinline{bash} and Linux independent from your computers host operating system.
 
-First you need to install Docker from their official website \url{https://docs.docker.com/engine/install/}
+First, you need to install Docker from their official website \url{https://docs.docker.com/engine/install/}.
 
-Afterwards you can start right away by entering the following command in your operating systems terminal:
+Afterwards, you can start right away by entering the following command in your operating systems terminal:
 
 \begin{lstlisting}
 docker run --name ubuntu-playground-c -it jonaswessner/ubuntu-playground:latest
@@ -24,3 +24,5 @@ If you want to completely reset the container, you can use the following command
 \begin{lstlisting}
 docker container rm ubuntu-playground-c
 \end{lstlisting}
+
+For exercise 8, you will have to enter the password for the user \lstinline{myuser}. The password is set to \lstinline{secret}.
